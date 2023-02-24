@@ -10,8 +10,8 @@ public class EventboardCommentVO {
 	private Date evc_date;
 	private String id;
 	private String nickname;
-	private String del;
-	private int reGup;
+	private String del; // 삭제여부
+	private int reGup; // 리플을 달 댓글의 번호
 	private int replyCount;
 	private String userImage;
 	

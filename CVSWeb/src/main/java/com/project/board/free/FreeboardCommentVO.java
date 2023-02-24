@@ -12,7 +12,7 @@ public class FreeboardCommentVO {
 	private String nickname;
 	private int reGup; // 리플을 달 댓글의 번호
 	private String del; // 댓글 삭제 시 y, 삭제한 댓글이 아니면 n
-	private int replyCount; // 대댓글 개수
+	private int replyCount;
 	private String userImage;
 	
 	public int getFbc_idx() {

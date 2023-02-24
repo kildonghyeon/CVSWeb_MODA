@@ -45,14 +45,7 @@ public class ItemManager {
 				String str = doc.select("body").text();
 				
 //				========================== 23.02.20 코드 수정 ===================================
-//				// 위 문자열을 JSON Object에 넣어줘야 내가 필요한 값들을 빼올 수 있는데, 그렇기 위해서는 위 문자열을 JSON데이터형태로 만들어줘야한다.
-//				// (이해하기가 어렵다면 위 문자열의 형태를 아래와 같이 만들어줘야한다.
-//				// {"results":[{"attFileId":"MD0000000058011", ...}
-//				
-//				// 먼저 "\"를 없애준다.
 //				str = str.replaceAll("\\\\", ""); // 결과: "{"results\":[{"attFileId\":"MD0000000864121", ...}"
-//				
-//				// 다음은 문자열의 첫번째 쌍따옴표와 마지막 쌍따옴표, 즉 첫글자와 마지막 글자를 없애준다. 
 //				str = str.substring(1); // 결과: {"results\":[{"attFileId\":"MD0000000864121", ...}"
 //				str = str.substring(0, str.length() - 1); // 결과: {"results\":[{"attFileId\":"MD0000000864121", ...} 완성!
 //				========================== 23.02.20 코드 수정 ===================================
@@ -468,7 +461,7 @@ public class ItemManager {
 						
 						// 가져온 정보들을 itemVO에 넣어준다.
 						ItemVO itemVO = new ItemVO();
-						itemVO.setCategory("기타상품"); // 카테고리 분류는 따로 안되어있어 일단 기타상품으로 (아무것도 안주면 에러가 뜨기 때문)
+						itemVO.setCategory("기타상품");
 						itemVO.setItemName(itemName);
 						itemVO.setItemPrice(itemPrice);
 						itemVO.setSellCVS("C·SPACE");

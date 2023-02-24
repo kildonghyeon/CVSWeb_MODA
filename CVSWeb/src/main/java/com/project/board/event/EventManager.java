@@ -15,9 +15,6 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
-// 추후에 void를 list 형태로 리턴해서 컨트롤러에서 DB에 넣을 수 있도록 수정 예정
-// i값, j값, 선택자, 변수명 등은 사이트별로 맞게 조절해서 사용할 것
-// 얻어와야할 값: 제목, 내용, 날짜 => EventboardVO 참고 
 public class EventManager {
 	
 	String targetSite = "";
@@ -288,7 +285,6 @@ public class EventManager {
 	
 	public ArrayList<EventboardVO> getCspaceEvent() {
 		ArrayList<EventboardVO> list = new ArrayList<EventboardVO>();		
-			// System.out.println(targetSite);
 			try {
 				int page = 0;
 				while(true) {
